@@ -1,0 +1,17 @@
+.subNavContainer {
+  display: flex;
+  height: 56px;
+  padding: 16px 32px;
+  align-items: center;
+  gap: 22px;
+}
+
+.mainLink {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.subLink {
+  color: var(--grey100);
+  font-size: 14px;
+}
