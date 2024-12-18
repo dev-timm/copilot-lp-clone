@@ -1,3 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+:root {
+  /* colors */
+  --primary: #a371f7;
+  --primary-light: #d2a8ff;
+  --primary-dark: #3c1e70;
+  --secondary: #79c0ff;
+  --grey900: #010409;
+  --grey800: #0d1117;
+  --grey700: #161b22;
+  --grey500: #21262c;
+  --grey400: #31363d;
+  --grey300: #3d444d;
+  --grey200: #515459;
+  --grey100: #8b949e;
+  --white: #fff;
+
+  --background-color: var(--grey800);
+  --background-secondary-color: var(--background-secondary-color);
+  --border-color: var(--grey300);
+  --border-color-light: var(--grey200);
+  --border-color-dark: var(--grey400);
+  --text-color: var(--white);
+  --text-color-dark: var(--grey100);
+  --link-color: var(--secondary);
+
+  /* layout */
+  --max-width: 1248px;
+  --fixed-width: 600px;
+  --fluid-width: 90vw;
+  --nav-height: 4.5rem;
+  --anchor-nav-height: 4.5rem;
+  --sub-nav-height: 3.5rem;
+  --border-radius: 0.5rem;
+
+  /* text */
+  --small-text: 0.875rem;
+  --extra-small-text: 0.75em;
+
+  /* animation */
+  --transition: 0.3s ease-in-out all;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--white);
+  font-family: 'Mona Sans', Helvetica, sans-serif;
+  line-height: 1;
+}
+
+.container {
+  width: var(--fluid-width);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
 h1 {
-  color: red;
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.text-large {
+  font-size: 1.5rem;
+  line-height: 150%;
 }
