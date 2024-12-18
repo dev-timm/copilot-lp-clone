@@ -61,6 +61,21 @@ body {
   line-height: 1;
 }
 
+ul,
+ol {
+  list-style: none; /* Removes bullet points or numbers */
+  margin: 0; /* Removes default margins */
+  padding: 0; /* Removes default padding */
+}
+
+a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Inherits the color from the parent element */
+  background: none; /* Removes any default background */
+  border: none; /* Removes any default border */
+  outline: none; /* Removes default focus outline (optional, but not recommended) */
+}
+
 .container {
   width: var(--fluid-width);
   max-width: var(--max-width);

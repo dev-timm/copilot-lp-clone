@@ -1,5 +1,3 @@
-import Logo from '../components/Logo';
-
 const Landing = () => {
   return (
     <div>
