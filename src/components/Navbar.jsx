@@ -46,13 +46,13 @@ const Navbar = () => {
           </ul>
         </div>
         <div className={styles.rightNav}>
-          <div class={styles.searchContainer}>
+          <div className={styles.searchContainer}>
             <input type="search" placeholder="Search or jump to..." />
-            <img src={search} alt="search icon" class={styles.searchIcon} />
+            <img src={search} alt="search icon" className={styles.searchIcon} />
             <img
               src={openSearch}
               alt="open search icon"
-              class={styles.openSearchIcon}
+              className={styles.openSearchIcon}
             />
           </div>
           <a href="#">Sign in</a>

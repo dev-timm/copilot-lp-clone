@@ -1,0 +1,66 @@
+.hero {
+  display: flex;
+  padding: 56px 160px;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+}
+
+.heroBg {
+  position: absolute; /* Ensures it ignores the parent element and stays relative to the viewport */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full width of the viewport */
+  height: 150vh; /* Full height of the viewport */
+  background-image: url('../assets/hero-bg.jpg');
+  background-size: cover; /* Scales the image to cover the entire viewport */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating */
+  z-index: -1; /* Pushes it behind other content */
+}
+
+.heroBtn {
+  display: flex;
+  height: 48px;
+  padding: 6px 28px;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  border-radius: 8px;
+  color: var(--grey900);
+  border: 1px solid var(--grey900);
+  background: var(--white);
+}
+
+.topSection {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.heroHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.heroLabel {
+  display: flex;
+  width: 172px;
+  height: 34px;
+  padding: 4px 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  border: 1px solid #5b3cb7;
+  background: #121940;
+}
+
+.heroCode {
+  width: 85%;
+}

@@ -4,9 +4,13 @@ import { Navbar, SubNav } from '../components';
 const HomeLayout = () => {
   return (
     <>
-      <Navbar />
-      <SubNav />
-      <Outlet />
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <SubNav />
+        <Outlet />
+      </main>
     </>
   );
 };
