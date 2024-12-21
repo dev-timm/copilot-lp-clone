@@ -2,7 +2,6 @@
 .sliderContainer {
   position: relative;
   width: 85%; /* Adjust width as needed */
-  height: 100px; /* Adjust height as needed */
   overflow: hidden; /* Hide overflow */
 }
 

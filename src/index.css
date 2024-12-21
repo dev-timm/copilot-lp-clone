@@ -77,9 +77,14 @@ a {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--grey700);
   width: var(--fluid-width);
   max-width: var(--max-width);
   margin: 0 auto;
+  margin-top: 108px;
 }
 
 h1 {
@@ -116,4 +121,19 @@ a {
 .text-large {
   font-size: 1.5rem;
   line-height: 150%;
+}
+
+.blue-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: var(--link-color);
+}
+
+.greyText {
+  color: var(--grey100);
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.16px;
 }

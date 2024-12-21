@@ -1,3 +1,15 @@
+/* General */
+
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  gap: 32px;
+}
+
+/* Hero */
+
 .hero {
   display: flex;
   padding: 56px 160px;
@@ -32,22 +44,6 @@
   background: var(--white);
 }
 
-.topSection {
-  display: flex;
-  width: 70%;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-}
-
-.heroHeader {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-  align-self: stretch;
-}
-
 .heroLabel {
   display: flex;
   width: 172px;
@@ -63,4 +59,233 @@
 
 .heroCode {
   width: 85%;
+}
+
+/* advantage */
+
+.advantage {
+  display: flex;
+  padding: 0 160px;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+  background-color: var(--grey700);
+}
+
+.sectionLabel {
+  display: flex;
+  height: 32px;
+  padding: 4px 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  border: 1px solid var(--grey200);
+}
+
+.content {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+}
+
+.row {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.lightBox1 {
+  display: flex;
+  padding: 63px 48px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 196px;
+  border-radius: 24px;
+  background: url('../assets/research-bg.svg') lightgray 50% / cover no-repeat;
+  align-self: stretch;
+}
+
+.lightBoxLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.lightBox2 {
+  display: flex;
+  padding: 63px 48px;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 134%;
+  gap: 312px;
+  border-radius: 24px;
+  background: url('../assets/trust-center-bg.svg') lightgray 50% / cover
+    no-repeat;
+  align-self: stretch;
+}
+
+.darkBox1 {
+  display: flex;
+  padding: 62px 266px 62px 56px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 234px;
+  border-radius: 24px;
+  background: radial-gradient(
+    80.9% 88.48% at 26.11% 32.81%,
+    #100a31 0%,
+    #110a33 19.21%,
+    #000 100%
+  );
+  align-self: stretch;
+}
+
+.darkBox1Text {
+  font-size: 88px;
+  font-weight: 600;
+  line-height: 48px; /* 54.545% */
+  letter-spacing: -0.704px;
+}
+
+.darkBox1Text span {
+  color: #8b949e;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 48px; /* 200% */
+  letter-spacing: -0.192px;
+}
+
+.darkBox2 {
+  display: flex;
+  padding: 62px 38px 62px 56px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 208px;
+  border-radius: 24px;
+  background: radial-gradient(
+    80.9% 88.48% at 26.11% 32.81%,
+    #100a31 0%,
+    #110a33 19.21%,
+    #000 100%
+  );
+  align-self: stretch;
+}
+
+.darkBox2Text {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px; /* 120% */
+  letter-spacing: -0.32px;
+}
+
+.bigText {
+  color: var(--white);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 120%; /* 57.6px */
+  letter-spacing: -0.96px;
+}
+
+.circleIconShadow {
+  border-radius: 100px;
+  box-shadow: 0px 0px 41.4px 5px rgba(142, 202, 255, 0.28);
+}
+
+.boxIcons {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+}
+
+.iconLogos {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+}
+
+.customerStory {
+  display: flex;
+  width: 100%;
+  padding: 59px 55px 92px 55px;
+  align-items: flex-start;
+  gap: 101px;
+  border-radius: 24px;
+  background: var(--grey900);
+}
+
+.storyData {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 111px;
+}
+
+.storyNumbers {
+  display: flex;
+  align-items: center;
+  gap: 92px;
+  align-self: stretch;
+}
+
+.storyNumber {
+  display: flex;
+  width: 214px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.numberText {
+  color: var(--grey100);
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.16px;
+}
+
+.numberTitle {
+  color: var(--white);
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.storyDescription {
+  display: flex;
+  width: 464px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 51px;
+}
+
+.storyDescription p {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px; /* 120% */
+  letter-spacing: -0.32px;
+}
+
+.sideInfo {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.sideInfoContent {
+  display: flex;
+  width: 411px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 56px;
+}
+
+.sideContentText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
 }
