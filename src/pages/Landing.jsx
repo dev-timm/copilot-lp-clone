@@ -6,6 +6,9 @@ import chevronRightLight from '../assets/chevron-right-light.svg';
 import chevronRightBlue from '../assets/chevron-right-blue.svg';
 import problemSolution from '../assets/problem-solution.svg';
 import lightningCircle from '../assets/lightning-circle.svg';
+import quoteIcon from '../assets/quote-icon.svg';
+import authorLogo from '../assets/author-logo.svg';
+import capsuleLogo from '../assets/capsule-logo.svg';
 import githubCircle from '../assets/github-circle.svg';
 import heroCode from '../assets/hero-code.png';
 import { LogoSlider } from '../components';
@@ -47,7 +50,7 @@ const Landing = () => {
             </div>
             <h2>The competitive advantage developers ask for by name</h2>
           </div>
-          <div className={styles.content}>
+          <div className={styles.advantageContent}>
             <div className={styles.row}>
               <div className={styles.lightBox1}>
                 <p className={styles.bigText}>
@@ -163,6 +166,66 @@ const Landing = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* STANDARDS SECTION */}
+      <section className={styles.standards}>
+        <div className="container">
+          <div className={styles.sectionHeader}>
+            <img
+              src={githubIcon}
+              alt="github icon"
+              className={styles.headerIcon}
+            />
+            <h2>The industry standard</h2>
+          </div>
+          <div className={styles.standardsContent}>
+            <div className={styles.standardLargeBox}>
+              <img src={quoteIcon} alt="quote icon" />
+              <p className={styles.standardQuote}>
+                <span>
+                  AI empowers developers with automation, intelligent
+                  suggestions, and faster debugging.
+                </span>{' '}
+                It enhances productivity, improves code quality, and accelerates
+                development efficiency.
+              </p>
+              <div className={styles.quoteAuthor}>
+                <img src={authorLogo} alt="company logo" />
+                <div className={styles.authorDetails}>
+                  <p>Henry Johnson</p>
+                  <p>Engineering Manager for Infrastructure @ Lightbox</p>
+                </div>
+              </div>
+            </div>
+            <div className={styles.standardData}>
+              <div className={styles.standardDataBox}>
+                <h3>77,000+</h3>
+                <p>Businesses have adopted GitHub Copilot</p>
+              </div>
+              <div className={styles.standardDataBox}>
+                <h3>55%</h3>
+                <p>Businesses have adopted GitHub Copilot</p>
+                <p>Stack Overflow 2023 Survey</p>
+              </div>
+              <div className={styles.standardDataBox}>
+                <h3>3B+</h3>
+                <p>Accepted lines of code</p>
+              </div>
+            </div>
+            <div className={styles.standardLargeBox}>
+              <img src={capsuleLogo} alt="capsule company logo" />
+              <p className={styles.capsule}>
+                GitHub: A Leader in the 2024 Gartner® Magic Quadrant™for AI Code
+                Assistants
+              </p>
+              <a href="/" className="blue-link">
+                Read customer story
+                <img src={chevronRightBlue} alt="chevron right" />
+              </a>
             </div>
           </div>
         </div>

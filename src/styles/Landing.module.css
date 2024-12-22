@@ -83,12 +83,12 @@
   border: 1px solid var(--grey200);
 }
 
-.content {
+.advantageContent {
   margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 35px;
+  gap: 32px;
 }
 
 .row {
@@ -288,4 +288,125 @@
   align-items: flex-start;
   gap: 20px;
   align-self: stretch;
+}
+
+/* Standards */
+
+.standards {
+  background-image: url('../assets/standards-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.headerIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.standardLargeBox {
+  display: flex;
+  padding: 56px 56px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 56px;
+  align-self: stretch;
+  border-radius: 24px;
+  border: 1px solid #2b3035;
+
+  background: linear-gradient(
+    180deg,
+    rgba(14, 11, 24, 0.8) 0%,
+    rgba(5, 6, 7, 0.8) 100%
+  );
+  backdrop-filter: blur(23.350000381469727px);
+}
+
+.standardQuote {
+  color: var(--white);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: -0.8px;
+}
+
+.standardQuote span {
+  color: var(--grey100);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 52px; /* 130% */
+  letter-spacing: -0.8px;
+}
+
+.quoteAuthor {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.authorDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.authorDetails p {
+  font-family: 'Space Mono';
+}
+
+.authorDetails p:nth-of-type(2) {
+  color: var(--grey100);
+}
+
+.standardsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  align-self: stretch;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.standardData {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.standardDataBox {
+  display: flex;
+  padding: 56px;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 24px;
+  border: 1px solid #2b3035;
+  background: linear-gradient(180deg, #0e0b18 0%, #050607 100%);
+}
+
+.standardDataBox h3 {
+  font-weight: 500;
+}
+
+.standardDataBox p {
+  color: var(--grey100);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px; /* 150% */
+  letter-spacing: 0.18px;
+}
+
+.standardDataBox p:nth-of-type(2) {
+  margin-top: 32px;
+  font-size: 14px;
+}
+
+.capsule {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 52px; /* 130% */
+  letter-spacing: -0.8px;
 }
