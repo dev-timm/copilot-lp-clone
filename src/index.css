@@ -84,8 +84,6 @@ a {
   width: var(--fluid-width);
   max-width: var(--max-width);
   margin: 0 auto;
-  margin-top: 108px;
-  margin-bottom: 130px;
 }
 
 h1 {
@@ -137,4 +135,28 @@ a {
   font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: 0.16px;
+}
+
+.primary-btn {
+  display: flex;
+  height: 48px;
+  padding: 6px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  border-radius: 8px;
+  color: var(--grey900);
+  background: var(--white);
+}
+
+.secondary-btn {
+  display: flex;
+  height: 48px;
+  padding: 6px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 8px;
+  border: 1px solid var(--grey400);
 }

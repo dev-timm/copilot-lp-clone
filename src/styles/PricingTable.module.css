@@ -1,0 +1,63 @@
+.customTable {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+}
+
+.customTable th,
+.customTable td {
+  padding: 20px 0;
+}
+
+.customTable th div {
+  display: flex;
+  gap: 8px;
+}
+
+.customTable tbody tr {
+  border-bottom: 1px solid var(--grey300);
+}
+
+.customTable thead tr {
+  border-bottom: 1px solid var(--grey300);
+}
+
+.columnHead {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 120%; /* 28.8px */
+  letter-spacing: 0.077px;
+}
+
+.columnPrice {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: 0.102px;
+  margin-top: 8px;
+}
+
+.columnPriceSide {
+  color: var(--grey100);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  padding-top: 4px;
+}
+
+table tr td:nth-child(2),
+table tr td:nth-child(3),
+table tr td:nth-child(4) {
+  text-align: center;
+}
+
+.subHeadline td {
+  padding: 40px 0 24px 0;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--white);
+}
+
+.rowContent {
+  color: var(--grey100);
+}
