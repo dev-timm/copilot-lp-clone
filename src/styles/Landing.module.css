@@ -538,3 +538,49 @@
   gap: 32px;
   align-self: stretch;
 }
+
+.contactSales {
+  margin-top: 240px;
+  display: flex;
+  padding: 48px 400px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  border-radius: 24px;
+  border: 2px solid #1114e9;
+  background-color: var(--grey700);
+}
+
+.contactSalesText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.contactSalesText h4 {
+  text-align: center;
+  font-weight: 600;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: 0.102px;
+}
+
+.contactSalesText p {
+  color: var(--grey100);
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px; /* 133.333% */
+  letter-spacing: 0.18px;
+}
+
+.contactSalesBtn {
+  display: flex;
+  height: 48px;
+  padding: 6px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 8px;
+  border: 2px solid var(--white);
+}

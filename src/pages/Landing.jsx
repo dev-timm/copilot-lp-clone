@@ -349,6 +349,19 @@ const Landing = () => {
           <PricingTable />
         </div>
       </section>
+      {/* CONTACT SALES SECTION */}
+      <section className="container">
+        <div className={styles.contactSales}>
+          <div className={styles.contactSalesText}>
+            <h4>Need human help?</h4>
+            <p>Let’s define how to propel your team into a new era.</p>
+          </div>
+          <a href="/" className={styles.contactSalesBtn}>
+            Contact sales
+            <img src={chevronRightLight} alt="chevron right" />
+          </a>
+        </div>
+      </section>
     </>
   );
 };
