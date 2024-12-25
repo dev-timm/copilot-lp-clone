@@ -584,3 +584,54 @@
   border-radius: 8px;
   border: 2px solid var(--white);
 }
+
+/* usps */
+.uspSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+  margin-top: 180px;
+}
+
+.uspRow {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.uspItem {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  border-radius: 16px;
+  border: 1px solid var(--grey400);
+  background: var(--grey700);
+  justify-content: space-between;
+  align-self: stretch;
+}
+
+.uspItemDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.uspItemDescription h5 {
+  color: #fff;
+  font-weight: 600;
+  line-height: 26px; /* 130% */
+  letter-spacing: 0.064px;
+}
+
+.uspItemDescription p {
+  color: var(--grey100);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.16px;
+}

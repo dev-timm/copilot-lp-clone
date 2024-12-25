@@ -8,6 +8,8 @@ import chevronRightLight from '../assets/chevron-right-light.svg';
 import chevronRightBlue from '../assets/chevron-right-blue.svg';
 import problemSolution from '../assets/problem-solution.svg';
 import lightningCircle from '../assets/lightning-circle.svg';
+import uspItem1 from '../assets/usp-item-1.svg';
+import uspItem2 from '../assets/usp-item-2.svg';
 import quoteIcon from '../assets/quote-icon.svg';
 import authorLogo from '../assets/author-logo.svg';
 import capsuleLogo from '../assets/capsule-logo.svg';
@@ -349,6 +351,7 @@ const Landing = () => {
           <PricingTable />
         </div>
       </section>
+
       {/* CONTACT SALES SECTION */}
       <section className="container">
         <div className={styles.contactSales}>
@@ -360,6 +363,59 @@ const Landing = () => {
             Contact sales
             <img src={chevronRightLight} alt="chevron right" />
           </a>
+        </div>
+      </section>
+
+      {/* USP SECTION */}
+      <section className="container">
+        <div className={styles.uspSection}>
+          <h2>Get the most out of GitHub Copilot</h2>
+          <div className={styles.uspRow}>
+            <div className={styles.uspItem}>
+              <div className={styles.uspItemDescription}>
+                <img src={uspItem1} alt="icon" />
+                <h5>Hands-on consulting, guided workshops, and training</h5>
+                <p>
+                  Insights, best practices, and knowledge to help you adopt
+                  GitHub quickly and efficiently.
+                </p>
+              </div>
+              <a href="/" className="blue-link">
+                Explore GitHub Expert Services
+                <img src={chevronRightBlue} alt="chevron right" />
+              </a>
+            </div>
+
+            <div className={styles.uspItem}>
+              <div className={styles.uspItemDescription}>
+                <img src={uspItem2} alt="icon" />
+                <h5>Meet the companies who build with GitHub</h5>
+                <p>
+                  Leading organizations choose GitHub to plan, build, secure and
+                  ship software.
+                </p>
+              </div>
+              <a href="/" className="blue-link">
+                Read customer stories
+                <img src={chevronRightBlue} alt="chevron right" />
+              </a>
+            </div>
+
+            <div className={styles.uspItem}>
+              <div className={styles.uspItemDescription}>
+                <img src={uspItem2} alt="icon" />
+                <h5>Keep up with the latest on GitHub and trends in AI</h5>
+                <p>
+                  Check out the GitHub blog for tips, technical guides, best
+                  practices, and more.
+                </p>
+              </div>
+              <a href="/" className="blue-link">
+                Read blog
+                <img src={chevronRightBlue} alt="chevron right" />
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </>
