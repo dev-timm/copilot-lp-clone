@@ -116,9 +116,9 @@ const Table = () => {
       <path
         d="M4 12.5L7.67616 16.137C7.76909 16.2758 7.89383 16.3904 8.04 16.4713C8.18617 16.5522 8.34955 16.597 8.51653 16.602C8.68351 16.607 8.84926 16.572 9 16.5C9.15074 16.428 9.2821 16.321 9.38316 16.188L19.5 6"
         stroke="#A371F7"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

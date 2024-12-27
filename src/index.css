@@ -80,7 +80,6 @@ a {
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: var(--fluid-width);
   max-width: var(--max-width);
   margin: 0 auto;

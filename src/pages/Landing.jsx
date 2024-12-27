@@ -20,6 +20,7 @@ import { LogoSlider } from '../components';
 import iconLogo1 from '../assets/icon-logo-1.svg';
 import iconLogo2 from '../assets/icon-logo-2.svg';
 import iconLogo3 from '../assets/icon-logo-3.svg';
+import FrequentQuestions from '../components/FrequentQuestions';
 
 const Landing = () => {
   return (
@@ -369,7 +370,7 @@ const Landing = () => {
       {/* USP SECTION */}
       <section className="container">
         <div className={styles.uspSection}>
-          <h2>Get the most out of GitHub Copilot</h2>
+          <h3>Get the most out of GitHub Copilot</h3>
           <div className={styles.uspRow}>
             <div className={styles.uspItem}>
               <div className={styles.uspItemDescription}>
@@ -418,6 +419,7 @@ const Landing = () => {
           </div>
         </div>
       </section>
+      <FrequentQuestions />
     </>
   );
 };
