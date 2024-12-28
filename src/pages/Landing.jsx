@@ -15,12 +15,12 @@ import authorLogo from '../assets/author-logo.svg';
 import capsuleLogo from '../assets/capsule-logo.svg';
 import githubCircle from '../assets/github-circle.svg';
 import heroCode from '../assets/hero-code.png';
-import { LogoSlider } from '../components';
+import { LogoSlider, FrequentQuestions } from '../components';
 
 import iconLogo1 from '../assets/icon-logo-1.svg';
 import iconLogo2 from '../assets/icon-logo-2.svg';
 import iconLogo3 from '../assets/icon-logo-3.svg';
-import FrequentQuestions from '../components/FrequentQuestions';
+import Footer from '../components/Footer';
 
 const Landing = () => {
   return (
@@ -420,6 +420,7 @@ const Landing = () => {
         </div>
       </section>
       <FrequentQuestions />
+      <Footer />
     </>
   );
 };

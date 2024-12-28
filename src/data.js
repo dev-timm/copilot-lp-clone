@@ -141,3 +141,170 @@ export const aiQuestions = [
     info: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur iure omnis odio doloribus officia delectus sunt aperiam exercitationem, dolorum maiores deserunt voluptate, molestiae amet aspernatur repellendus perferendis facilis impedit quas.',
   },
 ];
+
+export const footerProduct = [
+  {
+    id: 1,
+    link: '#',
+    name: 'Features',
+  },
+  {
+    id: 2,
+    link: '#',
+    name: 'Enterprise',
+  },
+  {
+    id: 3,
+    link: '#',
+    name: 'Copilot',
+  },
+  {
+    id: 4,
+    link: '#',
+    name: 'Security',
+  },
+  {
+    id: 5,
+    link: '#',
+    name: 'Pricing',
+  },
+  {
+    id: 6,
+    link: '#',
+    name: 'Team',
+  },
+  {
+    id: 7,
+    link: '#',
+    name: 'Resources',
+  },
+  {
+    id: 8,
+    link: '#',
+    name: 'Roadmap',
+  },
+  {
+    id: 9,
+    link: '#',
+    name: 'Compare GitHub',
+  },
+];
+
+export const footerPlatform = [
+  {
+    id: 1,
+    link: '#',
+    name: 'Developer API',
+  },
+  {
+    id: 2,
+    link: '#',
+    name: 'Partners',
+  },
+  {
+    id: 3,
+    link: '#',
+    name: 'Education',
+  },
+  {
+    id: 4,
+    link: '#',
+    name: 'GitHub CLI',
+  },
+  {
+    id: 5,
+    link: '#',
+    name: 'GitHub Desktop',
+  },
+  {
+    id: 6,
+    link: '#',
+    name: 'GitHub Mobile',
+  },
+];
+
+export const footerSupport = [
+  {
+    id: 1,
+    link: '#',
+    name: 'Docs',
+  },
+  {
+    id: 2,
+    link: '#',
+    name: 'Community Forum',
+  },
+  {
+    id: 3,
+    link: '#',
+    name: 'Professional Services',
+  },
+  {
+    id: 4,
+    link: '#',
+    name: 'Premium Support',
+  },
+  {
+    id: 5,
+    link: '#',
+    name: 'Skills',
+  },
+  {
+    id: 6,
+    link: '#',
+    name: 'Status',
+  },
+  {
+    id: 7,
+    link: '#',
+    name: 'Contact GitHub',
+  },
+];
+
+export const footerCompany = [
+  {
+    id: 1,
+    link: '#',
+    name: 'About',
+  },
+  {
+    id: 1,
+    link: '#',
+    name: 'Customer stories',
+  },
+  {
+    id: 1,
+    link: '#',
+    name: 'Blog',
+  },
+  {
+    id: 1,
+    link: '#',
+    name: 'The ReadME Project',
+  },
+  {
+    id: 1,
+    link: '#',
+    name: 'Careers',
+  },
+  {
+    id: 1,
+    link: '#',
+    name: 'Newsroom',
+  },
+  {
+    id: 1,
+    link: '#',
+    name: 'Inclusion',
+  },
+  {
+    id: 1,
+    link: '#',
+    name: 'Social Impact',
+  },
+  {
+    id: 1,
+    link: '#',
+    name: 'Shop',
+  },
+];

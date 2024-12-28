@@ -592,6 +592,7 @@
   flex-direction: column;
   gap: 80px;
   margin-top: 180px;
+  margin-bottom: 180px;
 }
 
 .uspRow {
