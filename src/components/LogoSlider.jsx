@@ -64,11 +64,11 @@ const LogoSlider = () => {
   return (
     <div className={styles.sliderContainer}>
       <div className={`${styles.slider} ${isPaused ? styles.paused : ''}`}>
-        {logos.concat(logos).map((logo) => {
+        {logos.concat(logos).map((logo, index) => {
           const { id, company } = logo;
           return (
             <img
-              key={id}
+              key={`${id}-${index}`} // Create a composite key combining `id` and `index`
               src={company}
               alt="logo"
               onMouseEnter={handleMouseEnter}

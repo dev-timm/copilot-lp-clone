@@ -127,7 +127,9 @@ const Table = () => {
     <table className={styles.customTable}>
       <thead>
         <tr>
-          <h4>Compare features</h4>
+          <th>
+            <h4>Compare features</h4>
+          </th>
           <th className={styles.columnHead}>
             Individual
             <div className={styles.columnPrice}>
