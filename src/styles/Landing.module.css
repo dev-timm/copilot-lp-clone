@@ -436,6 +436,12 @@
   letter-spacing: -0.8px;
 }
 
+@media (max-width: 870px) {
+  .standardData {
+    flex-wrap: wrap;
+  }
+}
+
 /* pricing */
 
 .pricing {
