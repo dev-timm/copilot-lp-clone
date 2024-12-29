@@ -553,7 +553,7 @@
 .contactSales {
   margin-top: 240px;
   display: flex;
-  padding: 48px 400px;
+  padding: 48px 32px;
   flex-direction: column;
   align-items: center;
   gap: 40px;
