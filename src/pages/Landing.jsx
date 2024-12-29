@@ -58,7 +58,7 @@ const Landing = () => {
             </div>
             <div className={styles.advantageContent}>
               <div className={styles.row}>
-                <div className={styles.lightBox1}>
+                <div className={`${styles.lightBox1} ${styles.rowItemLarge}`}>
                   <p className={styles.bigText}>
                     Proven to increase developer productivity and accelerate the
                     pace of software development.
@@ -68,7 +68,7 @@ const Landing = () => {
                     <img src={chevronRightLight} alt="chevron right" />
                   </a>
                 </div>
-                <div className={styles.darkBox1}>
+                <div className={`${styles.darkBox1} ${styles.rowItemSmall}`}>
                   <img
                     src={lightningCircle}
                     className={styles.circleIconShadow}
