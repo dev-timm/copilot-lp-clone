@@ -620,6 +620,7 @@
   align-items: center;
   gap: 24px;
   align-self: stretch;
+  /* flex-wrap: wrap; */
 }
 
 .uspItem {
@@ -655,4 +656,10 @@
   font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: 0.16px;
+}
+
+@media screen and (max-width: 960px) {
+  .uspRow {
+    flex-direction: column;
+  }
 }
