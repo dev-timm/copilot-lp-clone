@@ -60,6 +60,12 @@
   width: 85%;
 }
 
+@media screen and (max-width: 1250px) {
+  .hero {
+    padding: 56px 40px;
+  }
+}
+
 /* advantage */
 
 .advantage {
@@ -97,7 +103,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
-  width: 100%;
 }
 
 .lightBox1 {
@@ -305,6 +310,30 @@
 @media (max-width: 1042px) {
   .customerStory {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .boxIcons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bigText {
+    font-size: 32px;
+  }
+
+  .darkBox2Text {
+    font-size: 32px;
+  }
+
+  .customerStory {
+    padding: 32px;
+  }
+
+  .storyDescription p {
+    font-size: 24px;
+    line-height: 120%;
   }
 }
 
@@ -661,5 +690,9 @@
 @media screen and (max-width: 960px) {
   .uspRow {
     flex-direction: column;
+  }
+
+  .sectionHeader {
+    width: 100%;
   }
 }

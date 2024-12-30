@@ -92,13 +92,12 @@ input::placeholder {
 @media screen and (max-width: 1300px) {
   .navContainer {
     flex-direction: column;
-    align-items: flex-start;
     gap: 0;
     padding: 16px 24px;
   }
 
   .rightNav {
-    visibility: hidden;
+    display: none;
   }
 
   .navToggle {

@@ -159,3 +159,26 @@ a {
   border-radius: 8px;
   border: 1px solid var(--grey400);
 }
+
+@media screen and (max-width: 680px) {
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+}
