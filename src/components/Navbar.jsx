@@ -1,18 +1,54 @@
-import { Link } from 'react-router-dom';
 import styles from '../styles/Navbar.module.css';
 import { Logo } from '../components';
 
 import chevron from '../assets/chevron-down.svg';
 import search from '../assets/search.svg';
 import openSearch from '../assets/open-search.svg';
+import mobileMenu from '../assets/mobile-menu.svg';
+
+import { useRef, useState, useEffect } from 'react';
 
 const Navbar = () => {
+  const [showLinks, setShowLinks] = useState(false);
+  const menuRef = useRef(null);
+
+  const toggleLinks = () => {
+    setShowLinks((prev) => !prev);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setShowLinks(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [menuRef]);
+
+  const handleLinkClick = () => {
+    setShowLinks(false);
+  };
+
   return (
     <>
       <div className={styles.navContainer}>
-        <div className={styles.leftNav}>
+        <div className={styles.navMain}>
           <Logo />
-          <ul className={styles.navLinks}>
+          <button className={`${styles.navToggle}`} onClick={toggleLinks}>
+            <img src={mobileMenu} alt="mobile menu icon" />
+          </button>
+          <ul
+            ref={menuRef}
+            className={
+              showLinks
+                ? `${styles.linksContainer} ${styles.showContainer}`
+                : `${styles.linksContainer}`
+            }
+          >
             <li>
               <a href="#" className={styles.navLink}>
                 Product <img src={chevron} alt="chevron" />
