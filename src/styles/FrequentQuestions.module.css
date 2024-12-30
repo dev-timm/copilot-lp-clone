@@ -89,3 +89,24 @@ ol li::before {
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.039px;
 }
+
+@media screen and (max-width: 1160px) {
+  .tabs {
+    flex-direction: row;
+  }
+
+  .activeTab {
+    width: fit-content;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .tabs {
+    flex-direction: column;
+  }
+}
