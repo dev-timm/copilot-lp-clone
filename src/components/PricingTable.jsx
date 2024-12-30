@@ -124,69 +124,73 @@ const Table = () => {
   );
 
   return (
-    <table className={styles.customTable}>
-      <thead>
-        <tr>
-          <th>
-            <h4>Compare features</h4>
-          </th>
-          <th className={styles.columnHead}>
-            Individual
-            <div className={styles.columnPrice}>
-              <p>$10</p>
-              <div className={styles.columnPriceSide}>
-                per user <br />
-                per month
-              </div>
-            </div>
-          </th>
-          <th className={styles.columnHead}>
-            Business
-            <div className={styles.columnPrice}>
-              <p>$19</p>
-              <div className={styles.columnPriceSide}>
-                per user <br />
-                per month
-              </div>
-            </div>
-          </th>
-          <th className={styles.columnHead}>
-            Enterprise
-            <div className={styles.columnPrice}>
-              <p>$39</p>
-              <div className={styles.columnPriceSide}>
-                per user <br />
-                per month
-              </div>
-            </div>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr className={styles.subHeadline}>
-          <td colSpan="4">Chat</td>
-        </tr>
-        {chat.map((row) => (
-          <tr key={row.id}>
-            <td className={styles.rowContent}>{row.col1}</td>
-            <td>{row.col2 ? <Check /> : null}</td>
-            <td>{row.col3 ? <Check /> : null}</td>
-            <td>{row.col4 ? <Check /> : null}</td>
-          </tr>
-        ))}
-        <tr className={styles.subHeadline}>
-          <td colSpan="4">Code completion</td>
-        </tr>
-        {code.map((row) => (
-          <tr key={row.id}>
-            <td className={styles.rowContent}>{row.col1}</td>
-            <td>{row.col2 ? <Check /> : null}</td>
-            <td>{row.col3 ? <Check /> : null}</td>
-            <td>{row.col4 ? <Check /> : null}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <div className={styles.tableWrapper}>
+      <div className="container">
+        <table className={styles.customTable}>
+          <thead>
+            <tr>
+              <th>
+                <h4>Compare features</h4>
+              </th>
+              <th className={styles.columnHead}>
+                Individual
+                <div className={styles.columnPrice}>
+                  <p>$10</p>
+                  <div className={styles.columnPriceSide}>
+                    per user <br />
+                    per month
+                  </div>
+                </div>
+              </th>
+              <th className={styles.columnHead}>
+                Business
+                <div className={styles.columnPrice}>
+                  <p>$19</p>
+                  <div className={styles.columnPriceSide}>
+                    per user <br />
+                    per month
+                  </div>
+                </div>
+              </th>
+              <th className={styles.columnHead}>
+                Enterprise
+                <div className={styles.columnPrice}>
+                  <p>$39</p>
+                  <div className={styles.columnPriceSide}>
+                    per user <br />
+                    per month
+                  </div>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className={styles.subHeadline}>
+              <td colSpan="4">Chat</td>
+            </tr>
+            {chat.map((row) => (
+              <tr key={row.id}>
+                <td className={styles.rowContent}>{row.col1}</td>
+                <td>{row.col2 ? <Check /> : null}</td>
+                <td>{row.col3 ? <Check /> : null}</td>
+                <td>{row.col4 ? <Check /> : null}</td>
+              </tr>
+            ))}
+            <tr className={styles.subHeadline}>
+              <td colSpan="4">Code completion</td>
+            </tr>
+            {code.map((row) => (
+              <tr key={row.id}>
+                <td className={styles.rowContent}>{row.col1}</td>
+                <td>{row.col2 ? <Check /> : null}</td>
+                <td>{row.col3 ? <Check /> : null}</td>
+                <td>{row.col4 ? <Check /> : null}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
   );
 };
 

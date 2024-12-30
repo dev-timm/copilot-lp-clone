@@ -1,7 +1,12 @@
+.tableWrapper {
+  overflow-x: auto; /* Enables horizontal scrolling */
+  width: 100%; /* Ensures the container spans the full width of its parent */
+}
+
 .customTable {
   border-collapse: collapse;
   text-align: left;
-  width: 100%;
+  min-width: 1050px; /* Ensures the table has a minimum width */
 }
 
 .customTable th,
